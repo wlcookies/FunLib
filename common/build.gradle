@@ -31,9 +31,9 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.wlcookies.common'
-                artifactId = 'common'
-                version = '0.0.2'
+                groupId = 'com.wlcookies.common.lib'
+                artifactId = 'commonlib'
+                version = '0.0.3'
             }
         }
     }
