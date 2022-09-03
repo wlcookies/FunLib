@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/github/FunLib/app/src/main/res/drawable/ic_chevron_right_24.xml" value="0.367" />
+        <entry key="..\:/github/FunLib/app/src/main/res/layout/activity_bing_day_image.xml" value="0.36614583333333334" />
+        <entry key="..\:/github/FunLib/app/src/main/res/layout/activity_bing_day_image_item.xml" value="0.25" />
+        <entry key="..\:/github/FunLib/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/github/FunLib/app/src/main/res/xml/network_security_config.xml" value="0.3651041666666667" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

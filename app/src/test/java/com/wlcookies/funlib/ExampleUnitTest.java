@@ -12,6 +12,8 @@ import static org.junit.Assert.*;
 public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+        String a = "$GPGGA,1,2,31";
+        String replace = a.replace("GPGGA", "GNGGA");
+        System.out.println(replace);
     }
 }

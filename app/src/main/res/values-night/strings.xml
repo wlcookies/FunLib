@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">FunLib</string>
     <string name="day_image">必应每日一图</string>
     <string name="http_loading">加载中</string>
 </resources>

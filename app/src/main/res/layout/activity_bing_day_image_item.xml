@@ -2,30 +2,30 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_8">
 
-    <Button
-        android:id="@+id/day_image_bt"
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_iv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/day_image"
+        android:layout_height="@dimen/dp_180"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/animation_view"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#07000000"
+        android:padding="@dimen/dp_12"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_12"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/day_image_bt"
-        app:lottie_autoPlay="true"
-        app:lottie_repeatCount="10"
-        app:lottie_rawRes="@raw/tt" />
+        tools:text="标题" />
 </androidx.constraintlayout.widget.ConstraintLayout>
