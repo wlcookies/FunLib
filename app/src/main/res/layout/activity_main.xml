@@ -7,25 +7,4 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/day_image_bt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/day_image"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/animation_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/day_image_bt"
-        app:lottie_autoPlay="true"
-        app:lottie_repeatCount="10"
-        app:lottie_rawRes="@raw/tt" />
 </androidx.constraintlayout.widget.ConstraintLayout>

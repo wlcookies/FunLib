@@ -17,32 +17,9 @@ import okhttp3.Response;
 
 public class MyApp extends Application {
     private static final String TAG = "MyApp";
+
     @Override
     public void onCreate() {
         super.onCreate();
-
-        initHttp();
-    }
-
-    private void initHttp() {
-        OkHttpClient okHttpClient = new OkHttpClient.Builder().build();
-        EasyConfig.with(okHttpClient)
-                .setLogEnabled(BuildConfig.DEBUG)
-                .setServer("https://cn.bing.com")
-                .setHandler(new IRequestHandler() {
-                    @NonNull
-                    @Override
-                    public String requestSucceed(@NonNull HttpRequest<?> httpRequest, @NonNull Response response, @NonNull Type type) throws Exception {
-                        Log.d(TAG, "requestSucceed: type" + type);
-                        return response.body().string();
-                    }
-
-                    @NonNull
-                    @Override
-                    public Exception requestFail(@NonNull HttpRequest<?> httpRequest, @NonNull Exception e) {
-                        return new Exception(e.getMessage());
-                    }
-                })
-                .into();
     }
 }

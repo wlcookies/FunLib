@@ -2,4 +2,6 @@
     <string name="app_name">FunLib</string>
     <string name="day_image">必应每日一图</string>
     <string name="http_loading">加载中</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
